@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Kontak</title>
+    <link rel="stylesheet" href="stayle.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Hubungi Kami</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="contoh@mail.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subjek">Subjek:</label>
+                <select id="subjek" name="subjek">
+                    <option value="pertanyaan">Pertanyaan Umum</option>
+                    <option value="kerjasama">Kerjasama</option>
+                    <option value="saran">Saran & Kritik</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div class="radio-group">
+                    <input type="radio" id="pria" name="gender" value="pria">
+                    <label for="pria">Pria</label>
+                    <input type="radio" id="wanita" name="gender" value="wanita">
+                    <label for="wanita">Wanita</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Kirim Sekarang</button>
+            <p><a href="index.html">Kembali ke Beranda</a></p>
+        </form>
+    </div>
+
+</body>
+</html>
